@@ -350,7 +350,7 @@ function takeScreenshot() {
 // Fonction de screenshot de secours
 function fallbackScreenshot() {
     const score = Math.floor(gameState.pizzas);
-    const message = `🍕 J'ai fait ${formatNumber(score)} pizzas dans Pizza Montano Clicker! 🍕\n\n#PizzaMontano #IdleClicker\n\nVenez goûter nos vraies pizzas: https://www.facebook.com/pizzamontano/?locale=fr_FR`;
+    const message = `🍕 J'ai fait ${formatNumber(score)} pizzas dans Pizza Montano Clicker! 🍕\n\n#PizzaMontano #IdleClicker\n\nVenez goûter les vraies pizzas: https://www.facebook.com/pizzamontano/?locale=fr_FR`;
     
     if (navigator.clipboard) {
         navigator.clipboard.writeText(message).then(() => {
