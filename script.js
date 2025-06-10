@@ -21,6 +21,14 @@ const upgradeDefinitions = [
         costMultiplier: 1.15
     },
     {
+        id: 'supplement',
+        name: '🧀 supplement cheddar',
+        description: 'du supplement pour plus de production',
+        baseCost: 30,
+        pizzaperclick: 1.5,
+        costMultiplier: 1.15
+    },
+    {
         id: 'oven',
         name: '🔥 Four à Pizza',
         description: 'Un four traditionnel pour cuire plus rapidement',
