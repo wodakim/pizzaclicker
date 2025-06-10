@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Montano Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <!-- Header -->
+        <header class="game-header">
+            <h1 class="game-title">🍕 Pizza Montano Clicker 🍕</h1>
+            <div class="stats-container">
+                <div class="stat">
+                    <span class="stat-label">Pizzas:</span>
+                    <span id="pizza-count" class="stat-value">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Par seconde:</span>
+                    <span id="pizzas-per-second" class="stat-value">0</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Game Area -->
+        <main class="game-main">
+            <!-- Pizza Clicker -->
+            <div class="clicker-section">
+                <div class="pizza-container">
+                    <button id="main-pizza" class="main-pizza-btn">
+                        <div class="pizza-emoji">🍕</div>
+                        <div class="click-text">Cliquez pour faire des pizzas!</div>
+                    </button>
+                    <div id="click-effects" class="click-effects"></div>
+                </div>
+            </div>
+
+            <!-- Upgrades Section -->
+            <div class="upgrades-section">
+                <h2 class="section-title">🏪 Améliorations de la Pizzeria</h2>
+                <div id="upgrades-container" class="upgrades-container">
+                    <!-- Les améliorations seront ajoutées dynamiquement -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="game-footer">
+            <div class="social-links">
+                <a href="https://www.facebook.com/pizzamontano/?locale=fr_FR" target="_blank" class="social-btn facebook">
+                    📘 Facebook
+                </a>
+                <a href="https://www.google.com/search?sa=X&sca_esv=813765718ccf2407&tbm=lcl&sxsrf=AE3TifO_bF6b5baikdZ_IWS5uxM8e5AcXw:1749548428555&q=Pizza%20Montano%20Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDYztDA3sQBiUwsLA2MLC2PDDYyMrxiFAjKrqhIVfPPzShLz8hUcyzKLF7FiEQQAly7hPkUAAAA&rldimm=13618748874588038831&hl=fr-FR&ved=0CAYQ5foLahcKEwjok5Llx-aNAxUAAAAAHQAAAAAQDQ&biw=1324&bih=944&dpr=1#lkt=LocalPoiReviews&arid=ChdDSUhNMG9nS0VJQ0FnSUN4a0xqcy1nRRAB" target="_blank" class="social-btn google">
+                    ⭐ Avis Google
+                </a>
+            </div>
+            <div class="share-section">
+                <button id="screenshot-btn" class="action-btn">📸 Screenshot</button>
+                <button id="share-facebook" class="action-btn">📘 Facebook</button>
+                <button id="share-twitter" class="action-btn">🐦 Twitter</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Pop-up Modal -->
+    <div id="popup-modal" class="popup-modal hidden">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3 id="popup-title">Offre Spéciale!</h3>
+                <button id="popup-close" class="popup-close">✕</button>
+            </div>
+            <div class="popup-body">
+                <div id="popup-image" class="popup-image"></div>
+                <p id="popup-text" class="popup-text"></p>
+            </div>
+            <div class="popup-footer">
+                <button id="popup-action" class="popup-action-btn">Continuer le jeu</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
