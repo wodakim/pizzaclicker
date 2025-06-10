@@ -17,6 +17,7 @@ const upgradeDefinitions = [
         description: 'Un chef expérimenté pour faire plus de pizzas',
         baseCost: 15,
         pizzasPerSecond: 0.1,
+        pizzasmultiplier: 1.15,
         costMultiplier: 1.15
     },
     {
