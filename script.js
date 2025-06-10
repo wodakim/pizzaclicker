@@ -25,7 +25,7 @@ const upgradeDefinitions = [
         name: '🧀 supplement cheddar',
         description: 'du supplement pour plus de production',
         baseCost: 30,
-        pizzaperclick: 1.5,
+        pizzasPerSecond: 0.5,
         costMultiplier: 1.15
     },
     {
